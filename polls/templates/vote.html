@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3 style="margin-bottom: 20px;"><strong>Pick Your Choice</strong></h3>
+    <h4>{{question.question}}</h4>
+
+    <form method="POST" action="{% url 'result' question.id %}">
+        {% csrf_token %}
+        <ul class="list-group" style="margin: 0px;">
+            {% for option in options %}
+                <label>
+                    <li class="list-group-item">
+                        <input type="radio" class="form-check-input me-1" name='choice' value="{{option.id}}">
+                        {{option.option}}
+                    </li>
+                </label>
+            {% endfor %}
+        </ul>
+        <input type="submit" value="submit" class="btn btn-primary">
+    </form>
+{% endblock %}
