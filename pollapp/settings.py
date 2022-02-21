@@ -26,8 +26,8 @@ SECRET_KEY = "django-insecure-)nv@@1f#%)3(7!lo+rfmr=0sor0mm82!6m^#vc3553^#!c44ue
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tiis-djgpolls.herokuapp.com', '127.0.0.1']
-
+# ALLOWED_HOSTS = ["tiis-djgpolls.herokuapp.com", "127.0.0.1:8000", "localhost:8000"]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -120,8 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [BASE_DIR/'static']
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
