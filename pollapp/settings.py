@@ -26,8 +26,8 @@ SECRET_KEY = "django-insecure-)nv@@1f#%)3(7!lo+rfmr=0sor0mm82!6m^#vc3553^#!c44ue
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ["tiis-djgpolls.herokuapp.com", "127.0.0.1:8000", "localhost:8000"]
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["tiis-djgpolls.herokuapp.com", "127.0.0.1:8000", "localhost:8000"]
+# ALLOWED_HOSTS = []
 
 # Application definition
 
